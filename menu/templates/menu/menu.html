@@ -1,0 +1,16 @@
+{% extends "menu/base.html" %}
+{% block title %}Our Menu{% endblock %}
+{% block content %}
+  {% for category in categories %}
+    {% if category.items %}
+      <h2>{{ category.name }}</h2>
+      {% for item in category.items %}
+        <div class="item">
+          <span class="price">Sh {{ item.price|floatformat:0 }}</span>
+          <strong>{{ item.name }}</strong>
+          <div class="desc">{{ item.description }}</div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endblock %}

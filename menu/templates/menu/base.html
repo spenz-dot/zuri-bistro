@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Restaurant{% endblock %}</title>
+  <style>
+    body { margin:0; font-family: Georgia, serif; background:#faf6f0; color:#2b2118; }
+    header { background:#7a2e1d; color:#fff; padding:18px; text-align:center; }
+    header h1 { margin:0; font-size:1.6rem; letter-spacing:2px; }
+    nav { margin-top:8px; }
+    nav a { color:#f3d9b1; margin:0 10px; text-decoration:none; }
+    main { max-width:700px; margin:0 auto; padding:18px; }
+    h2 { border-bottom:2px solid #c9a36b; padding-bottom:4px; color:#7a2e1d; }
+    .item { padding:10px 0; border-bottom:1px solid #e6dccb; }
+    .price { float:right; font-weight:bold; color:#7a2e1d; }
+    .desc { color:#5a4a3a; font-size:0.95rem; }
+    input, button { font-size:1rem; padding:8px; margin:4px 0; }
+    button { background:#7a2e1d; color:#fff; border:0; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zuri Bistro</h1>
+    <nav><a href="/">Home</a><a href="/menu/">Menu</a><a href="/reserve/">Book a Table</a></nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>
