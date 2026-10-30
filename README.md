@@ -1,5 +1,7 @@
 # Zuri Bistro - Restaurant Website
 
+**Live demo:** https://zuribistro.pythonanywhere.com
+
 A Django website for a restaurant, built entirely on an Android phone.
 
 ## Features
